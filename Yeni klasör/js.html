@@ -3,7 +3,7 @@
         <form>
             <div>
                 <input
-                name="sayı"
+                name="sayi"
                 type="number"
                 id="value1"/>
                  <select id="islem">
@@ -14,7 +14,7 @@
             </select>
                 <input 
                 type="number"
-                name="sayı2"
+                name="sayi2"
                 id="value2"/>
             </div>
             <button type="button" onclick="hesapla()">HESAPLA</button>
@@ -23,27 +23,27 @@
     </div>
     <script>
         function topla(){
-            var sayı =+document.getElementById('value1').value
-            var sayı2=+document.getElementById('value2').value
-            toplam= sayı + sayı2;            
+            var sayi =+document.getElementById('value1').value
+            var sayi2=+document.getElementById('value2').value
+            toplam= sayi + sayi2;            
             document.getElementById('sonuc1').innerText="sonuc: "+toplam
         }
         function cikar(){
-            var sayı =+document.getElementById('value1').value
-            var sayı2=+document.getElementById('value2').value
-            var cikar=sayı-sayı2;
+            var sayi =document.getElementById('value1').value
+            var sayi2=document.getElementById('value2').value
+            var cikar=sayi-sayi2;
             document.getElementById('sonuc1').innerText="sonuc: "+cikar
         }
         function carp(){
-            var sayı =document.getElementById('value1').value
-            var sayı2=document.getElementById('value2').value
-            var carpım=sayı*sayı2;
-            document.getElementById('sonuc1').innerText="sonuc: "+carpım
+            var sayi =document.getElementById('value1').value
+            var sayi2=document.getElementById('value2').value
+            var carpim=sayi*sayi2;
+            document.getElementById('sonuc1').innerText="sonuc: "+carpim
         }
         function böl(){
-            var sayı =document.getElementById('value1').value
-            var sayı2=document.getElementById('value2').value
-            var bolum=sayı/sayı2;
+            var sayi =document.getElementById('value1').value
+            var sayi2=document.getElementById('value2').value
+            var bolum=sayi/sayi2;
             document.getElementById('sonuc1').innerText="sonuc: "+bolum
         }
         function hesapla(){
