@@ -1,0 +1,80 @@
+<html>
+    <head><title>Formlar</title></head>
+    <body>
+        <form action=" "method="post" enctype="multipart/form-data">
+        <div>
+            <input
+            type="text"
+            name="isim"
+            placeholder="Ad Soyad"
+            value="Arda Ayaz"
+            />
+        </div>    
+        <div>
+            <input
+            type="email"
+            name="eposta"
+            placeholder="E-posta"
+            required
+            />
+        </div>
+        <div>
+            <input
+            type="password"
+            name="sifre"
+            placeholder="Şifre giriniz"
+            minlength="5"
+            maxlength="10"
+            required
+            />
+        </div>
+        <div> Beni Hatırla
+            <input
+            type="checkbox"
+            checked
+            name="Beni_Hatırla"
+            />
+        </div>
+        <div>
+            Oturum Açık kalsın mı?<br/>
+            Evet<input value="evet" type="radio" name="Oturum"/>
+            Hayır<input value="hayır" type="radio" name="Oturum"/> 
+        </div>
+        <div>
+            <input
+            type="number"
+            name="sayi"
+            min="10"
+            max="50"
+            step="5"
+            />
+            <input type="color"/>
+            <input type="date" name="tarih"/>
+            <input type="datetime-local" name="tarihsaat"/>
+            <input type="file" name="dosya"/>
+            <input type="hidden" name="id" value="Bu Benim"/>
+        </div>
+        <div>
+            <select name="sinif" required>
+            <option value=""> Lütfen Sınıf Seçiniz</option>
+            <option value="1">1.Sınıf</option>
+            <option value="2">2.Sınıf</option>
+            <option value="3">3.Sınıf</option>
+            <option value="4">4.Sınıf</option>
+
+            </select>
+        </div>
+        <div>
+            <textarea name="Biyografi" cols="50" rows="10"></textarea>
+        </div>
+        <div>
+            <input
+            type="reset" value="Temizle"/>
+            <input
+            type="submit" value="Giriş Yap"
+            />
+        </div>    
+        </form>
+
+    </body>
+</html>

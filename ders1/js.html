@@ -1,0 +1,134 @@
+<html>
+    <head><title>temel JS</title></head>
+    <body>
+        <form>
+            <div>
+                <input
+                 name="Kullanıcı Adı"
+                 İd="username"
+                 placeholder="Kullanıcı Adı">
+                 <span id="UserError"></span>
+
+            </div>
+            <div>
+                <input name="sifre" id="password" type="password" placeholder="Şifre"><span id="PassError"></span>
+                
+            </div>
+            <div>
+                <a onclick="dogrula()" Giriş Yapınız.></a>
+            </div>
+        </form>
+        <script>
+            function dogrula(){
+                var username=document.getElementById("username").value
+                var password=document.getElementById("password").value
+                var username=document.getElementById("PassError").innerText=" "
+                var username=document.getElementById("UserError").innerText=" "
+
+                if(!username && !password){
+                    var username=document.getElementById("UserError").innerText="Kullanıcı adı giriniz"
+                    // alert("Kullanıcı adı ve sifre giriniz")
+                }
+                
+                else if(!username){
+                    var username=document.getElementById("UserError").innerText="Kullanıcı adı giriniz"
+                    // alert("Kullanıcı adı giriniz")
+                }
+
+                else if (!password){
+                    var username=document.getElementById("PassError").innerText="Şifre giriniz."
+                    // alert("sifre giriniz")
+                }
+            }
+        </script>
+
+
+
+
+
+
+
+        <script>
+
+
+            //DEGİSKEN
+            var degisken;
+            degisken= "Merhaba"
+            degisken=5//string/number
+            degisken="5"//int
+            alert(degisken)
+            degisken=new Date().toLocaleDateString
+            // degisken=true//boolean
+            // alert(degisken)
+        </script>
+
+
+         <script> 
+
+
+         //method-fonksiyon
+         function fonksiyon()
+         { 
+            alert("method calıstı")
+         }
+         //fonksiyon calıstı
+         fonksiyon()
+
+
+         function fonksiyon2(parametre="")
+         {
+                alert(parametre)
+         }
+
+          fonksiyon2("günaydın")
+        </script>
+
+
+
+        <script>
+            //KOSUL İFADELERİ
+            function fonk3(deger)
+            {
+                if(deger){
+                    alert(deger)
+                }
+                else{
+                    alert("Deger atanmadı!")
+                }
+
+            }
+            // fonk3()
+
+            function fonk4(deger){
+                if(deger>0){
+                    alert("Sayı pozitif")
+                    console.log("1.sart")
+                }
+
+                else if(deger<0){
+                    alert("Sayı negatiftir")
+                    console.log("2.sart")
+                }
+
+                else if(deger==0){
+                    alert("Sayı 0`dır.")
+                    console.log("3.sart")
+                }
+
+                else if(deger>=5){
+                    alert("sayı 5 veya daha buyuktur.")
+                }
+
+                else{
+                    console.log("kosul saglanmadı.")
+                }
+            }
+            fonk4(14)
+
+
+        </script>
+
+
+
+    </body>
+</html>

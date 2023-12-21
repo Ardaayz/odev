@@ -1,0 +1,67 @@
+<html>
+    <body>
+        <form>
+            <div>
+                <input
+                name="sayı"
+                type="number"
+                id="value1"/>
+                 <select id="islem">
+                <option value="1">toplam</option>
+                <option value="2">çikarma</option>
+                <option value="3">carpma</option>
+                <option value="4">bolme</option>
+            </select>
+                <input 
+                type="number"
+                name="sayı2"
+                id="value2"/>
+            </div>
+            <button type="button" onclick="hesapla()">HESAPLA</button>
+            <div id="sonuc1"></div>
+        </form>
+    </div>
+    <script>
+        function topla(){
+            var sayı =+document.getElementById('value1').value
+            var sayı2=+document.getElementById('value2').value
+            toplam= sayı + sayı2;            
+            document.getElementById('sonuc1').innerText="sonuc: "+toplam
+        }
+        function cikar(){
+            var sayı =+document.getElementById('value1').value
+            var sayı2=+document.getElementById('value2').value
+            var cikar=sayı-sayı2;
+            document.getElementById('sonuc1').innerText="sonuc: "+cikar
+        }
+        function carp(){
+            var sayı =document.getElementById('value1').value
+            var sayı2=document.getElementById('value2').value
+            var carpım=sayı*sayı2;
+            document.getElementById('sonuc1').innerText="sonuc: "+carpım
+        }
+        function böl(){
+            var sayı =document.getElementById('value1').value
+            var sayı2=document.getElementById('value2').value
+            var bolum=sayı/sayı2;
+            document.getElementById('sonuc1').innerText="sonuc: "+bolum
+        }
+        function hesapla(){
+            var sonuc=document.getElementById('islem').value
+            if(sonuc=="1"){
+                topla();
+            }
+            else if(sonuc=="2"){
+                cikar();
+            }
+            else if(sonuc=="3"){
+                carp();
+            }
+            else if(sonuc=="4"){
+                böl();
+            }
+        }
+        
+        </script>
+    </body>
+</html>

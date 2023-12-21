@@ -12,3 +12,7 @@ bosluk kullanma
 
 ## ETİKETLER ##
 html de ne yapılmak ıstendıgını belirten yapılardır
+
+
+colspan yanyana birlestirir
+rowspan sütun birlestirir

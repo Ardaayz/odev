@@ -1,0 +1,102 @@
+/*CLASS ve ID kullanılır*/
+body{
+    background-color: brown;
+}
+
+/*CLASS "." ile tanımlanır.*/
+.anagovde{
+    background: wheat;
+    color:black;
+    font-size: 26px;
+}
+.AnaDiv
+{
+    /* GENİŞLİK */
+ width: 150px;
+ font-size: 50%;
+
+ /* YÜKSEKLİK */
+ height: 500px;
+ height: 40%;
+ /*height: 40vh; RESPONSİVE*/
+
+ /*HİZALAMA*/
+ margin-top: 25px;
+ margin-right: 50px;
+ margin-bottom: 80px;
+ margin-left: 120px;
+
+ margin: 150%;
+
+ margin: 80px 100px;
+
+ margin: 180px 150px 320px 35px;
+}
+.Altdiv{
+    /* width: 80%; */
+    margin: 10px 15px 0px 25px;
+
+    padding: 20px 50px 35px 20px;
+    
+    
+}
+
+.görsel
+{
+    margin:  25px;
+    width: 50%;
+    height: 300px;
+
+    border-top: 2px solid black;
+    border-right: 2px dotted red;
+    border-bottom: 2px dashed blue;
+    border-left: 2px double brown;
+
+    border: 3px solid brown;
+    border-radius: 25%;
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 80%;
+
+}
+.img
+{
+    background-color:aquamarine ;
+    background-image: url(../image/gazi.jpg);
+    /* background-position: right bottom; */
+    /* background-size: cover; */
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-repeat: repeat-y;
+    background-position: cover;
+    background: center/cover url(../image/gazi.jpg);
+
+}
+.resim
+{
+    width: 100%;
+    border-radius: 25%;
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 80%;
+    border: 3pxs solid black;
+}
+.url
+{
+    text-align: justify;
+    width: 100%;
+    color: black;
+    text-decoration: none;
+
+}
+.url a{
+    margin: 25px;
+    font-size: 32px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    text-decoration: overline dotted;
+    text-decoration: underline dashed darkgoldenrod;
+
+    text-shadow: 15px 5px burlywood;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
